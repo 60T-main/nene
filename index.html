@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ნენეს ნათლობა</title>
+    <meta
+      name="description"
+      content="ნენეს ნათლობის მოსაწვევი - 10.05.2026, 18:00"
+    />
+
+    <!-- Open Graph (Messenger, Instagram, WhatsApp, Viber) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:title" content="ნენე - ნათლობის მოსაწვევი" />
+    <meta property="og:image" content="https://example.com/bg.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="ნენეს ნათლობის მოსაწვევის მთავარი ფონური ვიზუალი" />
+    <meta property="og:locale" content="ka_GE" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mobile-prompt" role="status" aria-live="polite">
+      <img src="weddsite.png" alt="Weddsite logo" class="mobile-prompt__icon" />
+      <p class="mobile-prompt__title">გახსენით მობილურით</p>
+      <p class="mobile-prompt__text">
+        ეს მოწვევა შექმნილია მობილური ეკრანისთვის.
+      </p>
+    </div>
+
+    <main class="site-mobile">
+      <section class="hero" aria-label="ნენეს ნათლობის მთავარი ეკრანი">
+        <img src="bg.png" alt="" class="hero-bg" />
+        <img src="cloud-tl.png" alt="" class="deco deco-cloud-tl" />
+        <img src="angel-tr.png" alt="" class="deco deco-angel-tr" />
+        <img src="angel-bl.png" alt="" class="deco deco-angel-bl" />
+        <img src="dove-r.png" alt="" class="deco deco-dove-r" />
+        <img src="flowers-l.png" alt="" class="deco deco-flowers-l" />
+        <img src="flowers-r.png" alt="" class="deco deco-flowers-r" />
+        <img src="clouds-top.png" class="program-clouds" alt="" aria-hidden="true">
+
+
+        <div class="hero-center">
+          <img src="baby.png" alt="ნენე" class="baby-photo" />
+        </div>
+
+        <div class="hero-content" data-reveal data-delay="1000">
+          <h1 class="hero-name">ნენეს</h1>
+          <p class="hero-sub">ნათლობა</p>
+          <p class="hero-date">10 მაისი, 2026</p>
+          <p class="hero-date">18:00</p>
+          <a href="https://maps.app.goo.gl/UBXXGHCA8fYVKY616" target="_blank" rel="noopener noreferrer">
+              <p class="hero-location">📍შუაგული</p>
+          </a>
+          <img src="speech-buble.png" alt="" class="speech-buble">
+          <img src="clouds-seperator.png" alt="" class="clouds-seperator">
+              </div>
+      </section>
+
+      <section class="program" id="program" aria-label="დღის განრიგი">
+
+        <h2 class="program-title">დღის განრიგი</h2>
+
+        <div class="timeline" id="timeline">
+          <img src="angel-hover.png" id="tlDove" class="tl-dove" alt="" aria-hidden="true">
+
+          <div class="tl-item" data-id="arrival">
+            <button class="tl-card" type="button">
+              <span class="tl-time">18:00</span>
+              <img src="dove-r.png" class="tl-card-icon" alt="">
+              <span class="tl-card-title">შუაგული</span>
+              <span class="tl-card-sub">სტუმრების მიღება</span>
+            </button>
+            <div class="tl-dot"></div>
+          </div>
+
+
+
+          <div class="tl-item" data-id="celebration">
+            <button class="tl-card" type="button">
+              <span class="tl-time">19:00</span>
+              <img src="dove-r.png" class="tl-card-icon" alt="">
+              <span class="tl-card-title">ვახშამი</span>
+              <span class="tl-card-sub">სიყვარულით გელით</span>
+            </button>
+            <div class="tl-dot"></div>
+          </div>
+        </div>
+
+        <img src="flowers-l-2.png" class="program-flowers program-flowers--left" alt="" aria-hidden="true">
+        <img src="flowers-r-2.png" class="program-flowers program-flowers--right" alt="" aria-hidden="true">
+        <img src="bottom.png" class="bottom-deco" alt="">
+      </section>
+
+      <footer class="site-footer">
+        <a href="https://www.instagram.com/weddsites/" target="_blank" rel="noopener">
+          <img src="weddsite.png" alt="Weddsite logo" />
+          <span>Made with ♥ by Weddsite</span>
+        </a>
+      </footer>
+    </main>
+
+    <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+      <div class="modal-box" id="modalBox" role="dialog" aria-modal="true">
+        <button class="modal-close" id="modalClose" aria-label="დახურვა">×</button>
+        <img class="modal-img" id="modalImg" src="" alt="">
+        <h3 class="modal-title" id="modalTitle"></h3>
+        <p class="modal-body" id="modalBody"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

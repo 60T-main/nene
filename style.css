@@ -615,28 +615,72 @@ h1 {
 .site-footer {
   position: relative;
   z-index: 5;
-  margin: 0 auto 0.85rem;
+  margin: 0;
+  padding: 28px 18px 32px;
   text-align: center;
+  overflow: hidden;
+  background-color: #fbf2fb;
+  border-top: 1px solid rgba(226, 203, 232, 0.78);
+}
+
+.site-footer::before {
+  content: "";
+  position: absolute;
+  top: -42px;
+  left: 50%;
+  width: 220px;
+  height: 86px;
+  border-radius: 50%;
+  background-color: rgba(255, 250, 255, 0.82);
+  box-shadow:
+    -86px 18px 0 rgba(255, 250, 255, 0.58),
+    84px 16px 0 rgba(255, 250, 255, 0.58);
+  transform: translateX(-50%);
+}
+
+.site-footer::after {
+  content: "✦";
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  color: rgba(215, 181, 106, 0.62);
+  font-size: 12px;
+  letter-spacing: 46px;
+  text-shadow: -46px 12px 0 rgba(215, 181, 106, 0.34), 46px 10px 0 rgba(215, 181, 106, 0.34);
+  transform: translateX(-50%);
 }
 
 .site-footer a {
+  position: relative;
+  z-index: 1;
   display: inline-flex;
   align-items: center;
-  gap: 0.42rem;
+  justify-content: center;
+  gap: 0.48rem;
+  min-height: 42px;
+  padding: 10px 14px;
+  border: 1px solid rgba(226, 203, 232, 0.58);
+  border-radius: 999px;
+  background-color: rgba(255, 250, 255, 0.56);
+  box-shadow: 0 8px 24px rgba(180, 137, 191, 0.12);
   text-decoration: none;
-  color: #6f5776;
+  color: #876396;
   opacity: 0.3;
-  font-size: 0.86rem;
-  transition: opacity 0.3s ease, background-color 1.5s ease, color 1.5s ease, border-color 1.5s ease;
+  font-size: 0.82rem;
+  letter-spacing: 0.8px;
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, background-color 1.5s ease, color 1.5s ease, border-color 1.5s ease;
 }
 
 .site-footer a:hover {
   opacity: 0.95;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(180, 137, 191, 0.2);
 }
 
 .site-footer img {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
 
 .mobile-prompt {

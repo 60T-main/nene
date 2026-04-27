@@ -110,7 +110,7 @@ html {
 
 .deco-angel-bl {
   left: 0;
-  bottom: 16%;
+  bottom: 25%;
   width: 28%;
   animation-delay: -3.4s;
 }
@@ -214,13 +214,13 @@ h1 {
 
 .speech-buble {
   position: absolute;
-  bottom: -120%;
+  bottom: 7%;
   left: 55%;
   transform: translate(-50%, -50%);
   width: 65%;
   object-fit: contain;
   height: auto;
-  z-index: 2;
+  z-index: 4;
   animation: bubble-drift 7.4s ease-in-out -2.5s infinite;
 }
 
@@ -237,7 +237,7 @@ h1 {
 .program {
   position: relative;
   overflow: hidden;
-  padding: 58px 20px 72px;
+  padding: 8rem 20px 72px;
   background-color: #fbf2fb;
   background-image: url("bg-2.png");
   min-height: 100vh;

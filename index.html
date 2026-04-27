@@ -23,8 +23,19 @@
     <meta property="og:locale" content="ka_GE" />
 
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.12/dist/lottie-player.js"></script>
   </head>
-  <body>
+  <body class="intro-locked">
+    <div class="intro-overlay" id="introOverlay" aria-hidden="true">
+      <lottie-player
+        id="introAngel"
+        class="intro-angel"
+        src="Angel.json"
+        autoplay
+        loop
+      ></lottie-player>
+    </div>
+
     <div class="mobile-prompt" role="status" aria-live="polite">
       <img src="weddsite.png" alt="Weddsite logo" class="mobile-prompt__icon" />
       <p class="mobile-prompt__title">გახსენით მობილურით</p>

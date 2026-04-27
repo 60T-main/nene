@@ -1,4 +1,44 @@
 (function () {
+  var introOverlay = document.getElementById("introOverlay");
+  var introAngel = document.getElementById("introAngel");
+
+  function runIntro() {
+    if (!introOverlay || !introAngel) {
+      document.body.classList.remove("intro-locked");
+      document.body.classList.add("intro-ready");
+      return;
+    }
+
+    window.scrollTo(0, 0);
+
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        introAngel.classList.add("is-centered");
+      });
+    });
+
+    setTimeout(function () {
+      introAngel.classList.remove("is-centered");
+      introAngel.classList.add("is-exiting");
+      document.body.classList.add("intro-ready");
+    }, 2200);
+
+    setTimeout(function () {
+      introOverlay.classList.add("is-hidden");
+      document.body.classList.remove("intro-locked");
+    }, 3300);
+
+    setTimeout(function () {
+      introOverlay.style.display = "none";
+    }, 4300);
+  }
+
+  if (document.readyState === "complete") {
+    runIntro();
+  } else {
+    window.addEventListener("load", runIntro);
+  }
+
   var timelineData = {
     arrival: {
       img: "dove-r.png",
